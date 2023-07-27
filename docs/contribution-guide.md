@@ -21,13 +21,13 @@ That said, if you feel the change should be made anyway, please open an issue so
 
 Shopify introduces new endpoints often, so we often accept pull requests with new services for these endpoints! In general, if you're creating a new service, please try to implement all of the endpoints for the service as described in Shopify's docs. Take a look at the other service classes to get an idea for how they should be implemented.
 
-Every service in ShopifySharp should have an accompanying interface that describes all of the public methods for the interface. The interface should be placed in a separate file alongside your service file, and the documentation for each method should be added to the interface method – not the class. See the [CustomerService.cs](https://github.com/nozzlegear/ShopifySharp/blob/5750feb4116c6047d28720f9ef8c650b30e6a534/ShopifySharp/Services/Customer/CustomerService.cs) and [ICustomerService.cs](https://github.com/nozzlegear/ShopifySharp/blob/5750feb4116c6047d28720f9ef8c650b30e6a534/ShopifySharp/Services/Customer/ICustomerService.cs) files for an example.
+Every service in ShopifySharp should have an accompanying interface that describes all of the public methods for the interface. The interface should be placed in a separate file alongside your service file, and the documentation for each method should be added to the interface method – not the class. See the [CustomerService.cs](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/5750feb4116c6047d28720f9ef8c650b30e6a534/ShopifySharp/Services/Customer/CustomerService.cs) and [ICustomerService.cs](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/5750feb4116c6047d28720f9ef8c650b30e6a534/ShopifySharp/Services/Customer/ICustomerService.cs) files for an example.
 
 > Note that new services must have tests! Even if they're unable to run due to permission issues or requiring a Shopify Plus account, we'd still like the tests to be implemented to confirm that everything works and builds as expected. See the section below on writing tests.
 
 **If your new service uses Shopify's paginated list endpoint, always implement two methods for listing:** the first method should use the generic `ListFilter<EntityType>`, and the second method should use a more dedicated `EntityTypeListFilter`. 
 
-[Again, the CustomerService.cs file has a good example of this pattern:](https://github.com/nozzlegear/ShopifySharp/blob/5750feb4116c6047d28720f9ef8c650b30e6a534/ShopifySharp/Services/Customer/CustomerService.cs#L29)
+[Again, the CustomerService.cs file has a good example of this pattern:](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/5750feb4116c6047d28720f9ef8c650b30e6a534/ShopifySharp/Services/Customer/CustomerService.cs#L29)
 
 ```cs
 using ShopifySharp.Filters;
@@ -64,7 +64,7 @@ We don't reject these outright -- improvements are always welcome -- but anythin
 
 ## Writing tests
 
-ShopifySharp is uses [xUnit](https://xunit.github.io/) for tests. New tests should all follow the format of other, existing tests. You can use the [Article](https://github.com/nozzlegear/ShopifySharp/blob/master/ShopifySharp.Tests/Article_Tests.cs) test as an example. 
+ShopifySharp is uses [xUnit](https://xunit.github.io/) for tests. New tests should all follow the format of other, existing tests. You can use the [Article](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/master/ShopifySharp.Tests/Article_Tests.cs) test as an example. 
 
 If you're using VS Code, a snippet should be automatically loaded for creating tests. This snippet will set up a new test file for you when you type `test-shopifysharp`:
 

@@ -29,7 +29,7 @@ namespace ShopifySharp.Filters
         /// <remarks>
         /// This constructor is protected to prevent developers from using `new ListFilter()`, but to make creating your
         /// own ListFilter easier.
-        /// https://github.com/nozzlegear/shopifysharp/issues/515
+        /// https://github.com/LionelPerrault/dotNetLib-Shopify/issues/515
         /// </remarks>
         protected ListFilter()
         {

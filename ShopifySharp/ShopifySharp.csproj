@@ -14,8 +14,8 @@
     <Authors>Nozzlegear</Authors>
     <Copyright>Nozzlegear Software</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/nozzlegear/shopifysharp/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/nozzlegear/shopifysharp</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/nozzlegear/shopifysharp</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/LionelPerrault/dotNetLib-Shopify</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LionelPerrault/dotNetLib-Shopify</RepositoryUrl>
     <PackageTags>shopify,ecommerce</PackageTags>
   </PropertyGroup>
   <ItemGroup>

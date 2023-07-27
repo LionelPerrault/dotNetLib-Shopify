@@ -1,14 +1,12 @@
 # ShopifySharp: A .NET library for Shopify.
 
 [![NuGet](https://img.shields.io/nuget/v/ShopifySharp.svg?maxAge=3600)](https://www.nuget.org/packages/ShopifySharp/)
-[![Build status](https://github.com/nozzlegear/ShopifySharp/actions/workflows/build-and-test.yml/badge.svg?branch=master)](https://github.com/nozzlegear/ShopifySharp/actions/workflows/build-and-test.yml)
-[![license](https://img.shields.io/github/license/nozzlegear/shopifysharp.svg?maxAge=3600)](https://github.com/nozzlegear/shopifysharp/blob/master/LICENSE)
+[![Build status](https://github.com/LionelPerrault/dotNetLib-Shopify/actions/workflows/build-and-test.yml/badge.svg?branch=master)](https://github.com/LionelPerrault/dotNetLib-Shopify/actions/workflows/build-and-test.yml)
+[![license](https://img.shields.io/github/license/nozzlegear/shopifysharp.svg?maxAge=3600)](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/master/LICENSE)
 
 ShopifySharp is a .NET library that enables you to authenticate and make API calls to Shopify. It's great for building custom Shopify Apps using C# and .NET. You can quickly and easily get up and running with Shopify using this library.
 
 # The Shopify Development Handbook
-
-[![Learn how to build rock-solid Shopify apps with C# and ASP.NET](https://i.imgur.com/9GgDjK0.png)](https://nozzlegear.com/shopify-development-handbook?ref=ShopifySharp)
 
 Building an app or integration for the Shopify store is hard work. There are a ton of things you need to keep in mind when stitching together all of the API calls, redirect URLs and app settings that you'll need to use.
 
@@ -25,9 +23,6 @@ You're going to be asking yourself all of these questions when you try to build 
 
 It's difficult to find blog posts or tutorials about building Shopify apps, and downright impossible if you're trying to build them with C# and ASP.NET. Shopify's own partner blog puts a huge focus on designing themes over building real, functional apps, and their API docs only go so far if you don't know what you're looking for.
 
-[The Shopify Development Handbook](https://nozzlegear.com/shopify-development-handbook?ref=ShopifySharp) is a premium educational course that distills the experience of building Shopify applications and integrations into one concise and comprehensive course.
-
-[Click here to learn more about The Shopify Development Handbook, **and get a FREE sample chapter** on integrating a merchant's Shopify store with your app.](https://nozzlegear.com/shopify-development-handbook?ref=ShopifySharp)
 
 # Installation
 
@@ -60,7 +55,7 @@ Shopify has begun versioning their API, meaning new features are locked behind n
 | 5.19.0 - 5.19.1      | 2022-07             |
 | 6.0.1 and above      | 2023-01             |
 
-**Note:** ShopifySharp dropped support for .NET Framework 4.5 in version 5.14.0. [More details in #438.](https://github.com/nozzlegear/ShopifySharp/issues/438)
+**Note:** ShopifySharp dropped support for .NET Framework 4.5 in version 5.14.0. [More details in #438.](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/438)
 
 **A migration guide for migrating from ShopifySharp 5.x to ShopifySharp 6.0+ is coming soon.**
 
@@ -68,11 +63,7 @@ Shopify has begun versioning their API, meaning new features are locked behind n
 
 ### Question: How do I contribute to ShopifySharp?
 
-[Check out our contribution guide!](https://github.com/nozzlegear/ShopifySharp/blob/master/docs/contribution-guide.md) Is the guide missing anything? Please let me know by opening an issue!
-
-### Question: How do I look up a Shopify order by its name?
-
-[See this article to learn how to look up a Shopify order by its name property.](https://nozzlegear.com/shopify/looking-up-a-shopify-order-by-its-name)
+[Check out our contribution guide!](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/master/docs/contribution-guide.md) Is the guide missing anything? Please let me know by opening an issue!
 
 ### Question: How do I use ShopifySharp with a private app?
 
@@ -80,7 +71,7 @@ ShopifySharp works with any private Shopify app, no extra configuration needed. 
 
 ### Question: X method or Y endpoint randomly 404s/throws exceptions for some shops.
 
-Make sure that you're always using a \*.myshopify.com domain! While a "real" domain like "example.com" will often work with the API, there are some API endpoints that will randomly return redirects or 404s if you aren't using the \*.myshopify.com domain. [See this post by @dnatabar](https://github.com/nozzlegear/ShopifySharp/issues/286#issuecomment-1248952763) and [this post by @flgatormike](https://github.com/nozzlegear/ShopifySharp/issues/723#issuecomment-1074623062) for more information.
+Make sure that you're always using a \*.myshopify.com domain! While a "real" domain like "example.com" will often work with the API, there are some API endpoints that will randomly return redirects or 404s if you aren't using the \*.myshopify.com domain. [See this post by @dnatabar](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/286#issuecomment-1248952763) and [this post by @flgatormike](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/723#issuecomment-1074623062) for more information.
 
 ### Question: Updating a product (or other object) unpublishes it?
 
@@ -94,7 +85,7 @@ product.SomeProperty = newValue;
 product = await productService.UpdateAsync(productId, product);
 ```
 
-We're looking for feedback on methods to improve object updating and property serialization in ShopifySharp. [You can offer feedback here](https://github.com/nozzlegear/ShopifySharp/issues/388), and check out these issues ([#284](https://github.com/nozzlegear/ShopifySharp/issues/284), [#367](https://github.com/nozzlegear/ShopifySharp/issues/367), [#373](https://github.com/nozzlegear/ShopifySharp/issues/373), [#379](https://github.com/nozzlegear/ShopifySharp/issues/379), [#642](https://github.com/nozzlegear/ShopifySharp/issues/642)) for further history on the problem.
+We're looking for feedback on methods to improve object updating and property serialization in ShopifySharp. [You can offer feedback here](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/388), and check out these issues ([#284](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/284), [#367](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/367), [#373](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/373), [#379](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/379), [#642](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/642)) for further history on the problem.
 
 # A work-in-progress
 
@@ -224,7 +215,7 @@ These generous people have contributed their own hard work and time to improving
 
 Thank you!
 
-(If I missed you, just shoot me an email at joshua@nozzlegear.com)
+(If I missed you, just shoot me an email at LionelPerault@gmail.com)
 
 # Using ShopifySharp with a public Shopify app
 
@@ -251,7 +242,7 @@ to the **Tests** section below.
 
 ## Authorization and authentication
 
-**NOTICE**: If you're using ASP.NET MVC5 (or any version that isn't AspNet Core) you'll have compilation errors when trying to pass `Request.QueryString` or `Request.Headers` to the authorization methods described below. [See this issue for a workaround](https://github.com/nozzlegear/ShopifySharp/issues/164).
+**NOTICE**: If you're using ASP.NET MVC5 (or any version that isn't AspNet Core) you'll have compilation errors when trying to pass `Request.QueryString` or `Request.Headers` to the authorization methods described below. [See this issue for a workaround](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/164).
 
 ### Ensure a given URL is a valid \*myshopify.com URL
 
@@ -414,8 +405,6 @@ The Shopify billing API lets you create a recurring charge on a shop owner's acc
 I've put together a small guide called **_Shopify Billing 101: A Developer's Guide To Getting Paid For Your Apps_**,
 and you can get for **free** by joining the mailing list for **_Mastering Shopify Development_** (a training course
 for building Shopify apps with C# and ASP.NET).
-
-[Just head over here to get your free guide to the Shopify billing API.](https://nozzlegear.com/landing/shopify-billing-101?ref=ShopifySharp)
 
 Note that recurring charges are activated immediately after a user accepts them. At one time it was necessary to activate the charge after it was accepted, but Shopify has changed this behavior and it's no longer required or possible.
 
@@ -1254,7 +1243,7 @@ var filteredCollects = await service.CountAsync(new CollectFilterOptions()
 
 > **NOTE**: Shopify has changed how fulfillments are done in API version **2022-07 and above**. This takes affect in [ShopifySharp versions **5.19.0 and above**](#API-support). If you're using these versions of ShopifySharp, you should use fulfillment orders to create fulfillments, rather than the `FulfillmentService`. 
 > 
-> [Follow the example code in this issue](https://github.com/nozzlegear/ShopifySharp/issues/828) until our fulfillment documentation is updated.
+> [Follow the example code in this issue](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/828) until our fulfillment documentation is updated.
 
 A fulfillment represents a shipment of one or more items in an order. All fulfillments are tied to a single order.
 
@@ -2734,7 +2723,7 @@ Shopify uses the Checkout resource to manage a user's cart as it transitions to 
 var service = new CheckoutService(myShopifyUrl, shopAccessToken);
 var checkout = await service.CreateAsync(new Checkout
 {
-    Email = "joshua@nozzlegear.com"
+    Email = "LionelPerrault0616@gmail.com"
 });
 ```
 
@@ -2761,7 +2750,7 @@ var service = new CheckoutService(myShopifyUrl, shopAccessToken);
 var checkoutToken = "token";
 var checkout = await service.UpdateAsync(checkoutToken, new Checkout
 {
-    Email = "updated-email@nozzlegear.com"
+    Email = "LionelPerrault0616@gmail.com"
 });
 ```
 
@@ -2894,7 +2883,7 @@ Note that **instance-specific policies will always be used over global execution
 
 Keep in mind that the `RetryExecutionPolicy` and the `SmartRetryExecutionPolicy` will keep retrying your requests – potentially until the end of time – until they are successful. It's up to you to ensure that such a strategy won't impact the performance of your applications.
 
-If you need a custom policy to do something more complicated or to e.g. implement request logging, you can create your own request policy that extends the `ShopifySharp.IRequestExecutionPolicy` interface. [Check here](https://github.com/nozzlegear/ShopifySharp/blob/master/ShopifySharp/Infrastructure/Policies/RetryExecutionPolicy.cs) for an example.
+If you need a custom policy to do something more complicated or to e.g. implement request logging, you can create your own request policy that extends the `ShopifySharp.IRequestExecutionPolicy` interface. [Check here](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/master/ShopifySharp/Infrastructure/Policies/RetryExecutionPolicy.cs) for an example.
 
 # Custom Filters
 
@@ -2923,13 +2912,13 @@ var list = await orderService.ListAsync(new MyCustomOrderFilter()
 
 If you need even more fine-grained control over what gets sent through your custom filter, you can also override the `ToParameters` or `ToSingleParameter` methods of the filter. Those methods are called by the service when it's serializing the filter to a querystring.
 
-[You can take a look at the `Parameterizable` class (which is used by all filters) for a look at the current implementation](https://github.com/nozzlegear/ShopifySharp/blob/85a0eed28937eee2870e9104a55796e1a1039cfb/ShopifySharp/Infrastructure/Parameterizable.cs#L18) and what you can do in those methods.
+[You can take a look at the `Parameterizable` class (which is used by all filters) for a look at the current implementation](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/85a0eed28937eee2870e9104a55796e1a1039cfb/ShopifySharp/Infrastructure/Parameterizable.cs#L18) and what you can do in those methods.
 
 # "Why don't you use enums?"
 
 I'm a big fan of using enums to make things easier for C# devs, because it removes a lot of the headache that comes with trying to remember all the valid string options for certain properties. With enums, we get those options hardcoded by default. We can easily scroll up and down the list of known values and select the one we need, without having to worry about typos.
 
-Many Shopify objects have string properties that only accept a predetermined list of values, and these properties are perfect for matching to C# enums. Unfortunately, Shopify has a habit of only documenting the most used values and leaving the developer to guess the rest. On top of that, they sometimes change those enums completely, [such as this case where they changed the enums used for filtering orders without announcing it](https://github.com/nozzlegear/ShopifySharp/issues/64).
+Many Shopify objects have string properties that only accept a predetermined list of values, and these properties are perfect for matching to C# enums. Unfortunately, Shopify has a habit of only documenting the most used values and leaving the developer to guess the rest. On top of that, they sometimes change those enums completely, [such as this case where they changed the enums used for filtering orders without announcing it](https://github.com/LionelPerrault/dotNetLib-Shopify/issues/64).
 
 That's a problem when it comes to strongly-typed languages like C#. If you receive an enum property that doesn't have a value matching the enum, you're going to get a big fat exception thrown in your face. This is especially problematic when these undocumented enum values are sent to you automatically in webhooks.
 
@@ -2941,4 +2930,4 @@ What were previously enums in ShopifySharp 1.x and 2.x are now string properties
 
 # Contributing to ShopifySharp
 
-Check out our [contribution guide](https://github.com/nozzlegear/ShopifySharp/blob/master/docs/contribution-guide.md) for guidance on contributing new features, services, classes and bugfixes to ShopifySharp! The guide also contains details on how to set up and run ShopifySharp's test suite.
+Check out our [contribution guide](https://github.com/LionelPerrault/dotNetLib-Shopify/blob/master/docs/contribution-guide.md) for guidance on contributing new features, services, classes and bugfixes to ShopifySharp! The guide also contains details on how to set up and run ShopifySharp's test suite.

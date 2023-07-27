@@ -39,8 +39,8 @@ namespace ShopifySharp
             else
             {
                 //array parameters are handled differently: see https://community.shopify.com/c/Shopify-APIs-SDKs/HMAC-calculation-vs-ids-arrays/td-p/261154
-                //https://github.com/nozzlegear/ShopifySharp/pull/437
-                //https://github.com/nozzlegear/ShopifySharp/issues/530
+                //https://github.com/LionelPerrault/dotNetLib-Shopify/pull/437
+                //https://github.com/LionelPerrault/dotNetLib-Shopify/issues/530
                 result = values.Count <= 1 && !key.EndsWith("[]") ?
                             values.FirstOrDefault() :
                             '[' + string.Join(", ", values.Select(v => '"' + v + '"')) + ']';
@@ -286,7 +286,7 @@ namespace ShopifySharp
             using (var msg = new HttpRequestMessage(HttpMethod.Head, uri))
             {
                 var version = (typeof(AuthorizationService)).GetTypeInfo().Assembly.GetName().Version;
-                msg.Headers.Add("User-Agent", $"ShopifySharp v{version} (https://github.com/nozzlegear/shopifysharp)");
+                msg.Headers.Add("User-Agent", $"ShopifySharp v{version} (https://github.com/LionelPerrault/dotNetLib-Shopify)");
 
                 try
                 {

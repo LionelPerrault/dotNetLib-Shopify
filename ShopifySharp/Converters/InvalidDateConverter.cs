@@ -10,7 +10,7 @@ namespace ShopifySharp.Converters
     /// e.g '0000-12-31T18:09:24-05:50', which is smaller than both DateTime.MinValue and DateTimeOffset.MinValue
     /// UPDATE October 2022:
     /// This API bug has been encountered in several additional API fields, such as transaction.processed_at, customer.accepts_marketing_updated_at and customer.email_marketing_consent.consent_updated_at
-    /// See https://github.com/nozzlegear/ShopifySharp/issues/803
+    /// See https://github.com/LionelPerrault/dotNetLib-Shopify/issues/803
     /// This converter is applied to all date properties because:
     /// *It seems to can start occurring on multiple any date fields
     /// *The impact of not handling is quite severe. ShopifySharp would fail to deserialize and return an error
